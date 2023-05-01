@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computation Program</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Computation Program</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Variables</h2>
+        <p>First number: <span id="firstNumber"></span></p>
+        <p>Second number: <span id="secondNumber"></span></p>
+      </div>
+      <div class="col-md-6">
+        <h2>Results</h2>
+        <p>Sum: <span id="sum"></span></p>
+        <p>Difference: <span id="difference"></span></p>
+        <p>Product: <span id="product"></span></p>
+        <p>Quotient: <span id="quotient"></span></p>
+        <p>Modulus: <span id="modulus"></span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    // Declare and initialize variables
+    var firstNumber = 10;
+    var secondNumber = 5;
+
+    // Set the variables values
+    document.getElementById("firstNumber").innerHTML = firstNumber;
+    document.getElementById("secondNumber").innerHTML = secondNumber;
+
+    // Solve for sum, difference product, quotient and modulus of the two variables
+    var sum = firstNumber + secondNumber;
+    var difference = firstNumber - secondNumber;
+    var product = firstNumber * secondNumber;
+    var quotient = firstNumber / secondNumber;
+    var modulus = firstNumber % secondNumber;
+
+    // Display computed values using JavaScript arithmetic operators
+    document.getElementById("sum").innerHTML = sum;
+    document.getElementById("difference").innerHTML = difference;
+    document.getElementById("product").innerHTML = product;
+    document.getElementById("quotient").innerHTML = quotient;
+    document.getElementById("modulus").innerHTML = modulus;
+  </script>
+</body>
+</html>
